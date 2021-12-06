@@ -29,14 +29,11 @@ namespace Lab2_sa
             backgroundWorker1.RunWorkerCompleted += WorkCompleted;
             backgroundWorker1.RunWorkerAsync(arguments1);
             Console.WriteLine("Naciśnij c aby zakończyć");
-            while (backgroundWorker1.IsBusy)
+            if (Console.ReadKey(true).KeyChar == 'c')
             {
-                if (Console.ReadKey(true).KeyChar == 'c')
-                {
-                    backgroundWorker1.CancelAsync();
-
-                }
+                backgroundWorker1.CancelAsync();
             }
+
         }
         
 
@@ -68,7 +65,7 @@ namespace Lab2_sa
                     if (worker != null && !worker.CancellationPending)
                     {
                         powierzchnia += funkcja.GetY((decimal)rangeFrom + i * krok);
-                        Thread.Sleep(10);
+                        Thread.Sleep(100);
                         if (i % 10 == 0)
                         {
                             worker.ReportProgress(i * 1);
