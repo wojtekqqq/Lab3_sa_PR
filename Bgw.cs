@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Threading;
 
-namespace Lab2_sa
+namespace Lab3_sa
 {
-    class Bgw
+    class Bgw : IPrzetwarzania
     {
-
+        public string Name => "BackgroundWorker";
+        public int Id => 2;
         public void Run(IFunction function, decimal rangeFrom, decimal rangeTo, string name)
 
         {

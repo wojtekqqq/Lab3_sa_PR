@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Threading;
 
-namespace Lab2_sa
+namespace Lab3_sa
 {
     class Bg
     {

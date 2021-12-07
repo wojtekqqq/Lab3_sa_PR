@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Lab2_sa
+namespace Lab3_sa
 {
     internal class Program
     {
@@ -20,6 +20,7 @@ namespace Lab2_sa
             var bgw1 = new Bgw();
             var bgw2 = new Bgw();
             var bgw3 = new Bgw();
+            var tpl1 = new Tpl();
 
             var kal1 = new Kalkulator1();
 
@@ -56,9 +57,12 @@ namespace Lab2_sa
             /*bg1.Run(wybranyIdFunkcji, przedzialy);*/
 
             //wywołanie 
-            bgw1.Run(wybranyIdFunkcji, przedzialy[0].RangeFrom(), przedzialy[0].RangeTo(), przedzialy[0].Name);
+
+            tpl1.Run(wybranyIdFunkcji, przedzialy[0].RangeFrom(), przedzialy[0].RangeTo(), przedzialy[0].Name);
+
+/*            bgw1.Run(wybranyIdFunkcji, przedzialy[0].RangeFrom(), przedzialy[0].RangeTo(), przedzialy[0].Name);
             bgw2.Run(wybranyIdFunkcji, przedzialy[1].RangeFrom(), przedzialy[1].RangeTo(), przedzialy[1].Name);
-            bgw3.Run(wybranyIdFunkcji, przedzialy[2].RangeFrom(), przedzialy[2].RangeTo(), przedzialy[2].Name);
+            bgw3.Run(wybranyIdFunkcji, przedzialy[2].RangeFrom(), przedzialy[2].RangeTo(), przedzialy[2].Name);*/
         }
     }
 }

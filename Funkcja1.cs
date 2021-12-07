@@ -1,4 +1,4 @@
-﻿namespace Lab2_sa
+﻿namespace Lab3_sa
 {
    public class Funkcja1 : IFunction
 

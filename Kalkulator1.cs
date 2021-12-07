@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Lab2_sa
+namespace Lab3_sa
 {
     class Kalkulator1 : ICalculator
     {
